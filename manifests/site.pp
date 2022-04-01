@@ -14,3 +14,6 @@ node /^web/ {
 node /^db/ {
   include role::db_server
 }
+class { 'docker':
+  use_upstream_package_source => false,
+}
